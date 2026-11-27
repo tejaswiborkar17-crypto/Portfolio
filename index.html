@@ -758,6 +758,10 @@ body{margin:0}
 .tb .cv-x{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:16px;cursor:pointer}
 .tb .cv-scroll{flex:1;overflow:auto;background:#E9E4D8;padding:clamp(0px,2vw,32px) 0}
 .tb .cv-scroll img{display:block;width:100%;max-width:1100px;height:auto;margin:0 auto;box-shadow:0 10px 40px rgba(20,40,75,.15)}
+.tb .cv-pg{position:relative;max-width:1100px;margin:0 auto}
+.tb .cv-pg img{max-width:none}
+.tb .cv-lk{position:absolute;display:block;border-radius:6px;cursor:pointer;transition:background .15s}
+.tb .cv-lk:hover{background:rgba(217,138,8,.12)}
 .tb .ex-dot,.tb .ax-st-live .ax-live{display:none!important}
 .tb .ex-list{counter-reset:ex}
 .tb .ex,.tb .ex:nth-child(even){counter-increment:ex;background:#121216;color:#F4F4F6;border-radius:30px;padding:clamp(22px,4vw,56px);grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,4.5vw,64px)}
@@ -1741,7 +1745,7 @@ body{margin:0}
                 <button type="button" onClick="{{closeCv}}" class="cv-x" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
               </span>
             </div>
-            <div class="cv-scroll"><img src="assets/6780075763dd1fe3f92f7f5e1a7fab06.jpg" alt="Tejaswi Borkar résumé"></div>
+            <div class="cv-scroll"><div class="cv-pg"><img src="assets/6780075763dd1fe3f92f7f5e1a7fab06.jpg" alt="Tejaswi Borkar résumé"><a class="cv-lk" href="https://tejaswiborkar.com/" target="_blank" rel="noopener" style="left:5.90%;top:5.33%;width:25.66%;height:3.68%" aria-label="Website"></a><a class="cv-lk" href="https://tejaswiborkar.com/" target="_blank" rel="noopener" style="left:82.12%;top:4.23%;width:12.64%;height:1.66%" aria-label="Website"></a><a class="cv-lk" href="mailto:tejaswiborkar17@gmail.com" style="left:75.56%;top:5.82%;width:19.19%;height:1.66%" aria-label="Email"></a><a class="cv-lk" href="https://www.linkedin.com/in/tejaswi-borkar-a82313168/" target="_blank" rel="noopener" style="left:73.97%;top:7.42%;width:20.79%;height:1.66%" aria-label="LinkedIn"></a></div></div>
           </div>
         </div>
       </sc-if>
