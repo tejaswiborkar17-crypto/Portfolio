@@ -15,6 +15,7 @@
 <meta name="twitter:image" content="https://tejaswiborkar.com/og.jpg">
 <meta name="theme-color" content="#EFE9DA">
 <link rel="icon" href="assets/c245a9557093dc5efd48ee133754747d.png">
+<script src="clarity.js"></script>
 <title>Tejaswi Borkar · Senior Product Designer</title>
 <script src="./support.js"></script>
 </head>
@@ -2013,6 +2014,16 @@ class Component extends DCLogic {
   }
   componentDidUpdate() {
     if (this.state.page === 'moments') this.playVideos();
+    try {
+      var c = window.clarity, st = this.state, k = (st.page || 'home') + '|' + (st.cs || '') + '|' + (st.cv ? 1 : 0), last = this._trk;
+      if (c && k !== last) {
+        var lp = last ? last.split('|') : ['', '', '0'];
+        if ((st.page || 'home') !== lp[0]) c('event', 'page_' + (st.page || 'home'));
+        if (st.cs && st.cs !== lp[1]) { c('event', 'case_' + st.cs); c('set', 'case_study', st.cs); }
+        if (st.cv && lp[2] !== '1') c('event', 'resume_open');
+      }
+      this._trk = k;
+    } catch (x) {}
   }
   playVideos() {
     try {
