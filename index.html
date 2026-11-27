@@ -1960,7 +1960,7 @@ class Component extends DCLogic {
       } catch (e) {}
     };
     try { window.addEventListener('scroll', this._sc, { passive: true }); } catch (e) {}
-    this._stkSet = function () { var v = false; try { v = window.matchMedia('(max-width: 640px)').matches; } catch (e) {} if (v !== !!self.state.stk) self.setState({ stk: v }); };
+    this._stkSet = function () { var v = false; /* continuous phone scroll switched off */ if (v !== !!self.state.stk) self.setState({ stk: v }); };
     this._stkSet();
     setTimeout(function () { self._cueReady = true; }, 3300);
     this._apSeen = 'home';
