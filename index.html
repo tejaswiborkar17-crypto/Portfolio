@@ -1027,8 +1027,8 @@ body{margin:0}
           <div class="wr-t">
             <span class="wr-hl" style="background: #C8F5A8">Agritech</span>
             <span class="wr-lab">Voice AI · Current work</span>
-            <h3>Helping 20,000+ farmers get farming advice, just by talking</h3>
-            <p>A voice-first AI on WhatsApp, in Marathi, Hindi and English. I design the whole conversation.</p>
+            <h3>A voice-first AI system for farmers</h3>
+            <p>Designing a conversational advisory system for 20,000+ farmers, in their own language.</p>
             <span class="wr-go">Read the story →</span>
           </div>
         </a>
@@ -1041,7 +1041,7 @@ body{margin:0}
             <span class="wr-hl" style="background: #FFF27A">Fintech</span>
             <span class="wr-lab">Wealth app · Mobile</span>
             <h3>Helping busy investors understand their money in a minute</h3>
-            <p>A wealth app for ₹50L+ investors. I was the sole designer, and it shipped to production.</p>
+            <p>Clarity across complex, multi-asset portfolios for HNI investors.</p>
             <span class="wr-go">Read the story →</span>
           </div>
         </a>
@@ -1053,8 +1053,8 @@ body{margin:0}
           <div class="wr-t">
             <span class="wr-hl" style="background: #C8F5A8">Agritech</span>
             <span class="wr-lab">Farm platform · Web + 2 apps</span>
-            <h3>Connecting admins, supervisors and farmers around every field</h3>
-            <p>A farm management system: an admin dashboard and two field apps that work offline.</p>
+            <h3>A farm management system built for fast field operations</h3>
+            <p>System design across admin, supervisor and farmer apps, connected by one design system and built to work offline.</p>
             <span class="wr-go">Read the story →</span>
           </div>
         </a>
@@ -1066,8 +1066,8 @@ body{margin:0}
           <div class="wr-t">
             <span class="wr-hl" style="background: #FFD6DE">Healthcare</span>
             <span class="wr-lab">Member 360 · Analytics</span>
-            <h3>Turning a person’s whole health record into one readable view</h3>
-            <p>Analytics for care teams, with visual views and the tables they trusted one toggle away.</p>
+            <h3>High-stakes clinical workflows</h3>
+            <p>Improving analytics and reducing cognitive load for care teams in clinical decision-making.</p>
             <span class="wr-go">Read the story →</span>
           </div>
         </a>
@@ -1079,8 +1079,8 @@ body{margin:0}
           <div class="wr-t">
             <span class="wr-hl" style="background: #A8F0E4">Ed-tech</span>
             <span class="wr-lab">School platform · Apps &amp; web</span>
-            <h3>One school platform for every age, from KG to the admin</h3>
-            <p>Five apps and platforms for kids, students, teachers and admins, redesigned in 4 months.</p>
+            <h3>Running a school, made simpler</h3>
+            <p>Designing everyday school operations for teachers, admins and students.</p>
             <span class="wr-go">Read the story →</span>
           </div>
         </a>
@@ -2516,11 +2516,11 @@ class Component extends DCLogic {
       themeClass: dark ? 'dark' : '',
       moreCs: (function () {
         var all = [
-          { k: 'agri', tag: 'Agritech', tc: '#C8F5A8', t: 'Helping 20,000+ farmers get farming advice, just by talking', img: 'assets/859ab310d2bed8a1e7ebbdd85e862077.jpg' },
+          { k: 'agri', tag: 'Agritech', tc: '#C8F5A8', t: 'A voice-first AI system for farmers', img: 'assets/859ab310d2bed8a1e7ebbdd85e862077.jpg' },
           { k: 'wealth', tag: 'Fintech', tc: '#FFF27A', t: 'Helping busy investors understand their money in a minute', img: 'assets/d9bc7ac2acd92e74ce9cd848b8153682.jpg' },
-          { k: 'farm', tag: 'Agritech', tc: '#C8F5A8', t: 'Connecting admins, supervisors and farmers around every field', img: 'assets/05a34e60c0bbe1333f00f3878033c483.jpg' },
-          { k: 'health', tag: 'Healthcare', tc: '#FFD6DE', t: 'Turning a person’s whole health record into one readable view', img: 'assets/a78aab6d9031dd790626d562465ec56a.jpg' },
-          { k: 'edu', tag: 'Ed-tech', tc: '#A8F0E4', t: 'One school platform for every age, from KG to the admin', img: 'assets/e0ca9e89024b34bd45636a4d9760ab13.jpg' }
+          { k: 'farm', tag: 'Agritech', tc: '#C8F5A8', t: 'A farm management system built for fast field operations', img: 'assets/05a34e60c0bbe1333f00f3878033c483.jpg' },
+          { k: 'health', tag: 'Healthcare', tc: '#FFD6DE', t: 'High-stakes clinical workflows', img: 'assets/a78aab6d9031dd790626d562465ec56a.jpg' },
+          { k: 'edu', tag: 'Ed-tech', tc: '#A8F0E4', t: 'Running a school, made simpler', img: 'assets/e0ca9e89024b34bd45636a4d9760ab13.jpg' }
         ];
         var cur = self.state.cs;
         return all.filter(function (m) { return m.k !== cur; }).map(function (m) {
@@ -2743,7 +2743,7 @@ class Component extends DCLogic {
         };
         var H = {
           tags: [{ t: 'Member 360', bg: 'rgba(91,99,240,.22)', fg: '#B9BDFF' }, { t: 'Healthtech · Web platform', bg: 'rgba(255,255,255,.08)', fg: 'rgba(244,244,246,.8)' }, { t: 'Live', bg: 'rgba(46,204,154,.16)', fg: '#7FE3C2' }],
-          title: 'Turning a person’s whole health record into one readable view',
+          title: 'High-stakes clinical workflows',
           sub: 'Rebuilding a healthcare analytics platform from endless tables into one connected view of a member that care teams can actually read, without taking away the tables they trusted.',
           meta: [{ k: 'My role', v: 'Product designer · IA → components → UI' }, { k: 'Team', v: 'Me + my design lead' }, { k: 'Timeline', v: '5 months' }, { k: 'Worked with', v: 'Client product team & developers' }],
           cover: 'assets/df6340544195453f94c41fbbe6636297.png', coverBg: '#7A6BE0', coverAlt: 'Member overview with cost summary and important concerns', note: 'Screens recreated to respect an NDA.',
@@ -2754,7 +2754,7 @@ class Component extends DCLogic {
         };
         var F = {
           tags: [{ t: 'Farm platform', bg: 'rgba(91,99,240,.22)', fg: '#B9BDFF' }, { t: 'Agritech · Web + 2 apps', bg: 'rgba(255,255,255,.08)', fg: 'rgba(244,244,246,.8)' }, { t: 'Works offline', bg: 'rgba(46,204,154,.16)', fg: '#7FE3C2' }],
-          title: 'Connecting admins, supervisors and farmers around every field',
+          title: 'A farm management system built for fast field operations',
           sub: 'A complete farm management system for organisations like sugar factories: an admin dashboard that runs the whole operation, a field app for supervisors that works offline, and a farmer app that turns crop data into what to do today.',
           meta: [{ k: 'My role', v: 'Only designer · end to end' }, { k: 'Team', v: 'PMs, developers, agronomists' }, { k: 'Timeline', v: '~1.5 years' }, { k: 'Works', v: 'Web + 2 apps, offline in the field' }],
           cover: 'assets/ed434151ca38f829d3ed61ceb5bfc7b8.jpg', coverBg: '#EAF3DC', coverAlt: 'Admin dashboard, supervisor app and farmer app, shown as outlines', note: 'Under NDA. Product name, client details and real screens withheld.',
@@ -2765,7 +2765,7 @@ class Component extends DCLogic {
         };
         var E = {
           tags: [{ t: 'School learning', bg: 'rgba(91,99,240,.22)', fg: '#B9BDFF' }, { t: 'Edtech · Apps & web', bg: 'rgba(255,255,255,.08)', fg: 'rgba(244,244,246,.8)' }, { t: 'Redesign of a live platform', bg: 'rgba(46,204,154,.16)', fg: '#7FE3C2' }],
-          title: 'One school platform for every age, from KG to the admin',
+          title: 'Running a school, made simpler',
           sub: 'The platform had everything a school needs. It just didn’t feel made for anyone using it. So I redesigned it for every age and every role.',
           meta: [{ k: 'My role', v: 'All the design work · UX and UI' }, { k: 'Team', v: 'Me, my design lead, client PM' }, { k: 'Timeline', v: '4 months' }],
           cover: 'assets/42d32a147c7534763f597df701af3b6a.png', coverBg: '#96477F', coverAlt: 'Student app screens: practice tests, continue learning and practice with friends', note: 'Client name withheld.',
@@ -2776,7 +2776,7 @@ class Component extends DCLogic {
         };
         var B = {
           tags: [{ t: 'Current work', bg: 'rgba(46,204,154,.16)', fg: '#7FE3C2' }, { t: 'Agritech · Voice AI', bg: 'rgba(255,255,255,.08)', fg: 'rgba(244,244,246,.8)' }, { t: 'Live on WhatsApp · App in progress', bg: 'rgba(91,99,240,.22)', fg: '#B9BDFF' }],
-          title: 'Helping 20,000+ farmers get farming advice, just by talking',
+          title: 'A voice-first AI system for farmers',
           sub: 'A farmer sends a voice note in Marathi and gets an answer about his own field, from planting to selling. Behind it: satellite, weather, the crop schedule, and a lot of conversation design.',
           meta: [{ k: 'My role', v: 'Product designer · the whole conversation experience' }, { k: 'Farmers', v: '20,000+ and growing' }, { k: 'Speaks', v: 'Marathi, Hindi & English · voice, photo, text' }, { k: 'Team', v: 'PM, agronomists, devs, AI team' }],
           cover: '', coverBg: '', coverAlt: '', note: 'Under NDA. Product name and real screens withheld; conversations shown are recreated.',
