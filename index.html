@@ -2824,7 +2824,7 @@ class Component extends DCLogic {
       openEdu: function (e) { try { e.preventDefault(); } catch (x) {} self.setState({ page: 'work', cs: 'edu', prog: 0, ch: null }); try { window.scrollTo(0, 0); } catch (x) {} },
       openFarm: function (e) { try { e.preventDefault(); } catch (x) {} self.setState({ page: 'work', cs: 'farm', prog: 0, ch: null }); try { window.scrollTo(0, 0); } catch (x) {} },
       openWealth: function (e) { try { e.preventDefault(); } catch (x) {} self.setState({ page: 'work', cs: 'wealth', prog: 0 }); try { window.scrollTo(0, 0); } catch (x) {} },
-      closeCase: function () { self.setState({ cs: null }); try { window.scrollTo(0, 0); } catch (x) {} },
+      closeCase: function () { if (self.state.stk) { self.go('work'); return; } self.setState({ cs: null }); try { window.scrollTo(0, 0); } catch (x) {} },
       cs: (function () {
         var W = {
           tags: [{ t: 'Wealth without the noise', bg: 'rgba(91,99,240,.22)', fg: '#B9BDFF' }, { t: 'Fintech · Mobile', bg: 'rgba(255,255,255,.08)', fg: 'rgba(244,244,246,.8)' }, { t: 'Live', bg: 'rgba(46,204,154,.16)', fg: '#7FE3C2' }],
@@ -3049,7 +3049,7 @@ class Component extends DCLogic {
           return out;
         })()
       },
-      closeArt: function () { self.setState({ art: -1 }); try { window.scrollTo(0, 0); } catch (e) {} },
+      closeArt: function () { if (self.state.stk) { self.go('writing'); return; } self.setState({ art: -1 }); try { window.scrollTo(0, 0); } catch (e) {} },
       bandDrops: this.bandDrops,
       cardDrops: this.cardDrops,
       splashes: this.splashes,
