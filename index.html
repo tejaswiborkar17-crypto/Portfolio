@@ -4,11 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Tejaswi Borkar, senior product designer. I notice what people don't say, and design for it.">
-<meta property="og:title" content="Tejaswi Borkar, Product Designer">
-<meta property="og:description" content="Case studies in AI, fintech, healthcare and education.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tejaswiborkar.com/">
+<meta property="og:title" content="Tejaswi Borkar · Senior Product Designer">
+<meta property="og:description" content="I notice what people don't say, and design for it. Case studies in AI, agritech, fintech, healthcare and education.">
+<meta property="og:image" content="https://tejaswiborkar.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tejaswiborkar.com/og.jpg">
 <meta name="theme-color" content="#EFE9DA">
 <link rel="icon" href="assets/c245a9557093dc5efd48ee133754747d.png">
-<title>Tejaswi Borkar — Product Designer</title>
+<title>Tejaswi Borkar · Senior Product Designer</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -2428,10 +2435,8 @@ class Component extends DCLogic {
         imgs: [{ src: 'assets/4aa1eb1f6bd6e018afd87b09be8e9afa.png', bg: '#FDF1DE', pad: '0', alt: '', cap: 'The kind of thing the AI keeps, so its advice fits the farmer’s real day.' }],
         paras: ['We advised watering in the morning or evening. But many farmers don’t have electricity then, so they water in the afternoon. Advice that ignores that is advice they can’t follow.',
           'So the AI has to remember things like this about each farmer, and the system has to account for them, for example recalculating soil moisture for afternoon watering. What’s worth remembering, and what isn’t, is what I’m designing right now.'] },
-      { id: 'cs-images', nav: 'Show, don’t text', kicker: 'Decision 05 · Format', title: 'A picture of the week beats a paragraph',
-        paras: ['Long text messages are easy to skip. So I designed the daily tasks and weekly plans as images, one clear visual per day or per week. Farmers reacted really well and told us they preferred seeing their tasks to reading them.'],
-        task: { title: 'This week on your field', sub: 'Banana · Early growth stage', items: [{ d: 'Mon', t: 'Water in the afternoon' }, { d: 'Wed', t: 'Second fertiliser dose' }, { d: 'Fri', t: 'Check lower leaves for yellow streaks' }, { d: 'Sun', t: 'Send one photo of your field' }] },
-        chatNote: 'Recreated example of a weekly task image.' },
+      { id: 'cs-images', nav: 'Show, don’t text', kicker: 'Decision 05 · Format', title: 'Less to read, more to see',
+        paras: ['Long text messages are easy to skip, especially on a small phone in the middle of a work day. So wherever I could, I replaced paragraphs with something visual the farmer can understand at a glance. Farmers told us they would rather see it than read it.'] },
       { id: 'cs-trust', nav: 'When the AI is wrong', kicker: 'Decision 06 · Trust', title: 'When the AI gets it wrong, a human steps in',
         imgs: [{ src: 'assets/c20711c1eb43fdad6272b27d547bff7f.png', bg: '#EEF0FF', pad: '0', alt: '', cap: 'A human in the loop for every risky answer.' }],
         paras: ['AI can give wrong or risky advice, and in farming a wrong dose costs a farmer money. So there’s a system in place: an agronomist checks and steps in with the right advice, and an evaluation agent checks answers too.',
